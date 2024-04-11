@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AllCompanies.Companies_Description"
+    android:background="#554848"
+    >
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardUseCompatPadding="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:contentPadding="3dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="#40F4A61F"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:id="@+id/imageCompany"
+                    android:scaleType="fitXY"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:id="@+id/name_company"
+                        android:textSize="25sp"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:text="@string/name"
+                        android:textColor="@color/white"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="start|center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:id="@+id/games_count"
+                        android:textColor="@color/white"
+                        android:text="@string/number_of_games"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="4dp"
+                        android:textSize="17sp"
+                        android:gravity="start|center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:padding="4dp"
+                    android:id="@+id/company_description"/>
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Video Games Archive</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_for_games">Search For Games</string>
+    <string name="welcome_to_games_hub">Welcome To Games Hub</string>
+    <string name="click_to_see_all_companies_and_more">Click to see All companies And More</string>
+    <string name="click_to_see_all_games">Click to see All Games</string>
+    <string name="bottom_info_dialog_developers">Hi guys ! We\'re glad to present you with our video games archive , it\'s fun and has a simple platform so you can navigate easily and find your Game , SEARCH ON!</string>
+    <string name="release_date">Release Date: </string>
+    <string name="headline">Headline</string>
+    <string name="rating">Rating: </string>
+    <string name="available_platforms">Available Platforms: </string>
+    <string name="genres">Genres: </string>
+    <string name="stores">Stores: </string>
+    <string name="name">Name: </string>
+    <string name="number_of_games">Number of games: </string>
+    <string name="choose_between_options">Choose between description and company\'s games</string>
+    <string name="company_options">You have the option to choose between more details about the company or to see the company\'s games</string>
+    <string name="games">Games</string>
+    <string name="extra_details">Extra Details</string>
+    <string name="name_lower">name</string>
+    <string name="id">id</string>
+    <string name="you_didn_t_enter_anything">You didn\'t enter anything</string>
+    <string name="video_games_archive">Video Games Archive</string>
+    <string name="total_games_developed">"Total games developed: "</string>
+    <string name="name_Capital">Name</string>
+    <string name="game_count">Game Count</string>
+</resources>

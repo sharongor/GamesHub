@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AllGames.games_fragment"
+    android:background="@drawable/companies_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:padding="5dp">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/text_search"
+            android:layout_width="0dp"
+            android:inputType="text"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="Enter anything to search"/>
+
+        <ImageButton
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_search_24"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:padding="5dp" />
+
+    <ProgressBar
+        android:id="@+id/all_companies_progress_bar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:progressTint="@color/white"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        style="?android:attr/progressBarStyleLarge" />
+
+
+
+</FrameLayout>

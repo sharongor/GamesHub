@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "27567851740",
+    "firebase_url": "https://games-project-21d1b-default-rtdb.firebaseio.com",
+    "project_id": "games-project-21d1b",
+    "storage_bucket": "games-project-21d1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27567851740:android:04ab757809373da61fcc19",
+        "android_client_info": {
+          "package_name": "il.movies.application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDghFCqDGoJIqB_dyhFVnVLb7OPGe9xVEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

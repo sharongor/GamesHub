@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/home_screen_fragment"
+        android:name="il.movies.application.ui.HomeScreen.home_screen_fragment"
+        android:label="fragment_home_screen_fragment"
+        tools:layout="@layout/fragment_home_screen_fragment" >
+        <action
+            android:id="@+id/action_home_screen_fragment_to_publishers_fragment"
+            app:destination="@id/publishers_fragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_home_screen_fragment_to_games_fragment"
+            app:destination="@id/games_fragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_home_screen_fragment_to_favorites"
+            app:destination="@id/favorites"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpTo="@id/home_screen_fragment" />
+        <action
+            android:id="@+id/action_home_screen_fragment_to_login"
+            app:destination="@id/login"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popUpTo="@id/my_nav" />
+        <action
+            android:id="@+id/action_home_screen_fragment_to_search_profile"
+            app:destination="@id/search_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/companies_games_fragment"
+        android:name="il.movies.application.ui.AllCompanies.companies_games_fragment"
+        android:label="fragment_companies_games_fragment"
+        tools:layout="@layout/fragment_companies_games_fragment" />
+    <fragment
+        android:id="@+id/games_fragment"
+        android:name="il.movies.application.ui.AllGames.games_fragment"
+        android:label="fragment_games_fragment"
+        tools:layout="@layout/fragment_games_fragment" />
+    <fragment
+        android:id="@+id/publishers_fragment"
+        android:name="il.movies.application.ui.AllCompanies.publishers_fragment"
+        android:label="fragment_publishers_fragment"
+        tools:layout="@layout/fragment_publishers_fragment" >
+        <action
+            android:id="@+id/action_publishers_fragment_to_companies_games_fragment"
+            app:destination="@id/companies_games_fragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_publishers_fragment_to_companies_Description"
+            app:destination="@id/companies_Description"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/companies_Description"
+        android:name="il.movies.application.ui.AllCompanies.Companies_Description"
+        android:label="fragment_companies__description"
+        tools:layout="@layout/fragment_companies__description" />
+    <fragment
+        android:id="@+id/introduction"
+        android:name="il.movies.application.ui.Introduction.introduction"
+        android:label="fragment_introduction"
+        tools:layout="@layout/fragment_introduction" >
+        <action
+            android:id="@+id/action_introduction_to_home_screen_fragment"
+            app:destination="@id/home_screen_fragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_introduction_to_login"
+            app:destination="@id/login"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpTo="@id/my_nav" />
+    </fragment>
+    <fragment
+        android:id="@+id/login"
+        android:name="il.movies.application.authentication.login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_introduction"
+            app:destination="@id/introduction"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpTo="@id/my_nav" />
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/register"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpTo="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/register"
+        android:name="il.movies.application.authentication.register"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_register_to_introduction"
+            app:destination="@id/introduction"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpTo="@id/my_nav" />
+    </fragment>
+    <fragment
+        android:id="@+id/favorites"
+        android:name="il.movies.application.ui.favorites.favorites"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" >
+        <action
+            android:id="@+id/action_favorites_to_login"
+            app:destination="@id/login"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left" />
+        <action
+            android:id="@+id/action_favorites_to_home_screen_fragment"
+            app:destination="@id/home_screen_fragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/search_profile"
+        android:name="il.movies.application.ui.profiles.search_profile"
+        android:label="fragment_search_profile"
+        tools:layout="@layout/fragment_search_profile" />
+</navigation>
